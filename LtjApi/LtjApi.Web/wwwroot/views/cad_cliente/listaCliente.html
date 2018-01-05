@@ -1,0 +1,87 @@
+﻿<div ng-controller="cadClienteController as vm">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>{{vm.titulo}}</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a>Lista</a>
+                </li>
+                <li class="active">
+                    <strong>Lista de clientes</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row" ng-if="!vm.dadosCarregados">
+            <center>
+                <h3>Aguarde, carregando lista de clientes...</h3>
+            </center>
+        </div>
+        <div class="row" ng-if="vm.dadosCarregados">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>LIsta de clientes</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="col-sm-12" ng-if="vm.lista.length == 0">
+                            <h3> Nenhum cliente encontrado.</h3>
+                        </div>
+                        <div class="row" ng-if="vm.lista.length > 0">
+                            <div class="col-sm-5 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">Filtre por cidade</option>
+                                    <option value="1">Araxá</option>
+                                    <option value="2">Uberaba</option>
+                                    <option value="3">Uberlandia</option>
+                                    <option value="4">Ibia</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Nome" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary">Pesquisar</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 m-b-xs">
+                                <div data-toggle="buttons" class="btn-group">
+                                    <form class="form-horizontal" method="get">
+                                        <button type="submit" class="btn btn-sm btn-primary" ng-click="vm.incluir()">Novo cliente</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th width="700px">Nome</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in vm.lista">
+                                        <td>#{{item.codigo}}</td>
+                                        <td width="700px">{{item.nome}}</td>
+                                        <td>
+                                            <button class="btn btn-white btn-xs" ng-click="vm.editar(item)" data-toggle="tooltip" data-placement="top" title="" data-original-title="Alterar"><i class="fa fa-pencil"></i> Alterar</button>
+                                            <button class="btn btn-danger btn-xs" ng-click="vm.excluir(item)" data-toggle="tooltip" data-placement="top" title="" data-original-title="Excluir"><i class="fa fa-trash"></i> Excluir</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

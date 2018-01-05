@@ -1,0 +1,96 @@
+﻿<!--
+*
+* LtjApi - Responsive Admin Theme
+* Version 2.7.1
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="LtjApi">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Main LtjApi CSS files -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link id="loadBefore" href="css/style.css" rel="stylesheet">
+
+
+    <!--Css do alerta sweetalert-->
+    <link href="js/plugins/sweetalert/dist/sweetalert.css" rel="stylesheet" />
+
+
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in LtjApi theme on diferent view -->
+<body class="{{$state.current.data.specialClass}}" landing-scrollspy id="page-top">
+
+    <!-- Main view  -->
+    <div ui-view></div>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery/jquery-3.1.1.min.js"></script>
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- MetsiMenu -->
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- SlimScroll -->
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Peace JS -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/ltjapi.js"></script>
+
+    <!-- Modulos nativo angular-->
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-resource.js"></script>
+    <script src="js/angular/angular-sanitize.js"></script>
+    <script src="js/angular-translate/angular-translate.min.js"></script>
+
+    <!--Plugins-->
+    <script src="js/plugins/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/plugins/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="js/plugins/ui-router/angular-ui-router.js"></script>
+    <script src="js/plugins/angular-idle/angular-idle.js"></script>
+
+    <!--Js Bootstrap-->
+    <script src="js/bootstrap/ui-bootstrap-tpls-1.1.2.min.js"></script>
+
+    <!--
+     You need to include this script on any page that has a Google Map.
+     When using Google Maps on your own site you MUST signup for your own API key at:
+     https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+     After your sign up replace the key in the URL below..
+    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70"></script>
+
+    <!-- Inicializadores angular -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <!-- Controle angular expecifico -->
+    <script src="views/cad_cliente/cadCliente.controller.js?t=82882347892234"></script>
+    <script src="views/cad_cliente/cadCliente.service.js?t=82882347892234"></script>
+    
+</body>
+</html>

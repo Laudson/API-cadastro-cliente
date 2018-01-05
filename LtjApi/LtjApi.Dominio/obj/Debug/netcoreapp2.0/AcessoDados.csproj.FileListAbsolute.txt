@@ -1,0 +1,6 @@
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\ApiLtj\AcessoDados\bin\Debug\netcoreapp2.0\AcessoDados.deps.json
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\ApiLtj\AcessoDados\bin\Debug\netcoreapp2.0\AcessoDados.dll
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\ApiLtj\AcessoDados\obj\Debug\netcoreapp2.0\AcessoDados.csprojResolveAssemblyReference.cache
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\ApiLtj\AcessoDados\obj\Debug\netcoreapp2.0\AcessoDados.csproj.CoreCompileInputs.cache
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\ApiLtj\AcessoDados\obj\Debug\netcoreapp2.0\AcessoDados.AssemblyInfoInputs.cache
+C:\Users\Laudson\Documents\Visual Studio 2017\Projects\ApiLtj\AcessoDados\obj\Debug\netcoreapp2.0\AcessoDados.AssemblyInfo.cs
